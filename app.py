@@ -4,7 +4,7 @@ import time
 app=Flask(__name__)
 
 @app.route('/')
-def current_date_and_time():
+def current_day_and_time():
 	time_now=time.strftime('%I:%M%p %Z')
 	day_today=time.strftime('%A, %B, %Y')
 	return render_template('time.html', time_now=time_now, day_today=day_today)
