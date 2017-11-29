@@ -1,46 +1,39 @@
 <html>
-  <head>
-  <title>Simple Flask Current Day and Time App</title>
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-
-  <!-- CSS Reset -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-
-  <!-- Milligram CSS minified -->
-  <link rel="stylesheet" href="../static/milligram/dist/milligram.min.css">
-
+<head>
+  <title>Simple Flask Time and Day</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Automatically refreshes page every minute-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="../static/milligram/dist/milligram.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="refresh" content="60" >
-
   <link rel="icon" type="image/png" href="../static/icons/hourglass.png">
 
-    <style type="text/css">
-      body {
-        background-image: url("static/backgrounds/death_life.jpg");
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      h1, h2, h3 {
-        color: #FFFFFF;
-      }
-    </style>
+  <style type="text/css">
+  body {
+    background-image: url("static/backgrounds/death_life.jpg");
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1, h2, h3 {
+    color: #FFFFFF;
+  }
+</style>
 
-  </head>
-  
-  <body>
-    <h1>Simple Flask Current Day and Time App</h1>
+</head>
+
+<body>
+  <h1>Simple Flask Time and Day</h1>
   <hr />
   
-  <h3>The time now is</h3>
-    <h2><i>{{time_now}}</i><br/></h2>
+  <h3>The current time is</h3>
+  <h2><i>{{time_now}}</i><br/></h2>
   <hr />
-  <h3>And the day is</h3>
-    <h2><i>{{day_today}}</i><br/></h2> 
+  <h3>And the current day is</h3>
+  <h2><i>{{day_today}}</i><br/></h2> 
   <hr/>
 
-  </body>
+</body>
 </html>
